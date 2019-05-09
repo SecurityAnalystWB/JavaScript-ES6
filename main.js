@@ -118,7 +118,7 @@ class TodoList{
    console.log(find);   
 */
 
-//destrução
+//destruturação
 
 /*const usuario = {
     nome:'wellington',
