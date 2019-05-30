@@ -1,5 +1,4 @@
-/* 
-    class List {
+class List {
     constructor (){
         this.data = [];
 
@@ -12,7 +11,7 @@
 }
 
 
-/*class TodoList {
+class TodoList {
     constructor(){
         this.todos = [];
     }
@@ -21,11 +20,10 @@
         this.todos.push('Novo todo');
         console.log(this.todos);
     }
-}*/
+}
 
 
 //Herança 
-/*
 class TodoList extends List {
     constructor(){
         super();
@@ -49,13 +47,12 @@ document.getElementById("novoTodo").onclick = () =>{
 
 
 MinhaLista.showUser();
-*/
 
 /*
     Metodos estaticos são idepedentes da classe ou seja:
     ele não 'exergar' o restante da classe assim nos garante vamos fazer uma
     classe como exemplo correto de classes estaticos.
-
+*/
 
 class TodoList{
     constructor(){
@@ -67,25 +64,22 @@ class TodoList{
         console.log(this.todos);
     }
 }
-*/
 
 
 //Metodo que não depende de qualquer infomações no restante da classe!
-/*class Matematica {
+class Matematica {
     static soma(a,b){
         return a + b;
     }
 }
-*/
 
-//console.log(Matematica.soma(3,2));
+console.log(Matematica.soma(3,2));
 
 /* Vetores */
-//const arr = [1,2,3,4,5];
+const arr = [1,2,3,4,5];
 
 
-
-/* map => irá trazer um novo array com uma função que determinarmos  func recebe (item , index)
+// map => irá trazer um novo array com uma função que determinarmos  func recebe (item , index)
     
     const  newArr = arr.map(function(item){
         return item * 2;
@@ -93,8 +87,8 @@ class TodoList{
 
     console.log(newArr);
 
-   reduce => vai iterar cada posição de acordo com a anterior.  func recebe(total, next)
-   vai jogar pra iteração seguinte.
+   //reduce => vai iterar cada posição de acordo com a anterior.  func recebe(total, next)
+   //vai jogar pra iteração seguinte.
 
    const sum = arr.reduce(function (total,next){
         return total + next;
@@ -102,7 +96,7 @@ class TodoList{
 
    console.log(sum)
 
-   Filter =>  serão executados de acordo com nossa logica por exemplo trazer um array de numeros pares.
+   //Filter =>  serão executados de acordo com nossa logica por exemplo trazer um array de numeros pares.
 
    const filter = arr.filter(function(item){
        return item % === 0;
@@ -110,17 +104,15 @@ class TodoList{
 
    console.log(filter);
 
-   find => Se existe algo dentro do nosso array de acordo com nossa logica
+   //find => Se existe algo dentro do nosso array de acordo com nossa logica
    const find = arr.find(function(item){
        return item === 2;
    })
 
    console.log(find);   
-*/
 
 //destruturação
-
-/*const usuario = {
+const usuario = {
     nome:'wellington',
     idade : 23,
     endereco:{
@@ -130,13 +122,13 @@ class TodoList{
 }
 
 
-//console.log(usuario.nome);
-//console.log(usuario.idade);
-//console.log(usuario.endereco.cidade);
+console.log(usuario.nome);
+console.log(usuario.idade);
+console.log(usuario.endereco.cidade);
 
 //destruturação
 
-/* const { nome , idade , endereco: {cidade}} = usuario;
+const { nome , idade , endereco: {cidade}} = usuario;
 
 console.log(nome);
 console.log(idade);
@@ -167,4 +159,3 @@ const {nome , ...resto} = usuario;
 
 console.log(nome);
 console.log(resto);
-
